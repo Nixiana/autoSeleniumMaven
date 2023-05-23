@@ -1,4 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="OrangeHRM life">
+
+	
+
+	<test name="LoginAdminTest">
+	<parameter name="browserType" value="chrome" />
+	<parameter name="appURL"
+		value="https://opensource-demo.orangehrmlive.com/" />
+		<classes>
+			<class name="orangeHRM_Duy.LoginAdminTest"></class>
+		</classes>
+	</test>
+
     <test name="OrangeHRMPage">
         <classes>
             <class name="orangeHRM.NavigateToOrangeHRMTest"/>

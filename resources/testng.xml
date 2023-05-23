@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM-seleniumMaven">
+	<parameter name="browserType" value="chrome" />
+	<parameter name="appURL"
+		value="https://opensource-demo.orangehrmlive.com/" />
+
+	<test name="LoginAdminTest">
+		<classes>
+			<class name="orangeHRM_Duy.LoginAdminTest">
+				<methods>
+					<include name="loginAdminPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
